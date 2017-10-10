@@ -24,7 +24,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 
 * [moregeek](https://github.com/moregeek)
 * [typhonius](https://github.com/typhonius)
-* martin
+* [schumar](https://github.com/schumar)
 * [negesti](https://github.com/negesti)
 * peter
 * [andreashappe](https://github.com/andreashappe)
@@ -32,6 +32,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * [biyanisuraj](https://github.com/biyanisuraj)
 * [pedroguima](https://github.com/pedroguima)
 * Ben
+* [bharatnc](https://github.com/bharatnc)
 
 
 ####[[⬆]](#toc) <a name='general'>General Questions:</a>
@@ -77,9 +78,11 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * How to redirect STDOUT and STDERR in bash? (> /dev/null 2>&1)
 * What is the difference between UNIX and Linux.
 * What is the difference between Telnet and SSH?
-* Explain the three load averages and what do they indicate.
-
-
+* Explain the three load averages and what do they indicate. What command can be used to view the load averages?
+* Can you name a lower-case letter that is not a valid option for GNU ```ls```?
+* What is a Linux kernel module?
+* Walk me through the steps in booting into single user mode to troubleshoot a problem.
+* Walk me through the steps you'd take to troubleshoot a 404 error on a web application you administer.
 
 ####[[⬆]](#toc) <a name='medium'>Medium Linux Questions:</a>
 
@@ -113,6 +116,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What is the difference between local and remote port forwarding?
 * What are the steps to add a user to a system without using useradd/adduser?
 * What is MAJOR and MINOR numbers of special files?
+* Describe the mknod command and when you'd use it.
 * Describe a scenario when you get a "filesystem is full" error, but 'df' shows there is free space.
 * Describe a scenario when deleting a file, but 'df' not showing the space being freed.
 * Describe how 'ps' works.
@@ -139,6 +143,11 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * How can you limit process memory usage?
 * What is bash quick substitution/caret replace(^x^y)?
 * Do you know of any alternative shells? If so, have you used any?
+* What is a tarpipe (or, how would you go about copying everything, including hardlinks and special files, from one server to another)?
+* How can you tell if the httpd package was already installed?
+* How can you list the contents of a package?
+* How can you determine which package is better: openssh-server-5.3p1-118.1.el6_8.x86_64 or openssh-server-6.6p1-1.el6.x86_64 ?
+* Can you explain to me the difference between block based, and object based storage?
 
 ####[[⬆]](#toc) <a name='hard'>Hard Linux Questions:</a>
 
@@ -161,6 +170,9 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What's LD_PRELOAD and when it's used?
 * You ran a binary and nothing happened. How would you debug this?
 * What are cgroups? Can you specify a scenario where you could use them?
+* How can you remove/delete a file with file-name consisting of only non-printable/non-type-able characters?
+* How can you increase or decrease the priority of a process in Linux?
+* What are run-levels in Linux?
 
 
 ####[[⬆]](#toc) <a name='expert'>Expert Linux Questions:</a>
@@ -185,10 +197,11 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * How do you add an IPv6 address to a specific interface?
 * You have added an IPv4 and IPv6 address to interface eth0. A ping to the v4 address is working but a ping to the v6 address gives yout the response ```sendmsg: operation not permitted```. What could be wrong?
 * What is SNAT and when should it be used?
-* Explain how could you ssh login into a Linux system that DROPs all new incomming packets using a SSH tunnel.
+* Explain how could you ssh login into a Linux system that DROPs all new incoming packets using a SSH tunnel.
 * How do you stop a DDoS attack?
 * How can you see content of an ip packet?
 * What is IPoAC (RFC 1149)?
+
 
 
 ####[[⬆]](#toc) <a name='mysql'>MySQL questions:</a>
@@ -200,16 +213,17 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * Describe briefly the steps you need to follow in order to create a simple master/slave cluster.
 * Why should you run "mysql_secure_installation" after installing MySQL?
 * How do you check which jobs are running?
-
+* How would you take a backup of a MySQL database?
 
 ####[[⬆]](#toc) <a name='devop'>DevOps Questions:</a>
 
 * Can you describe your workflow when you create a script?
 * What is GIT?
 * What is a dynamically/statically linked file?
-* What does "configure && make && make install" do?
+* What does "./configure && make && make install" do?
 * What is puppet/chef/ansible used for?
 * What is Nagios/Zenoss/NewRelic used for?
+* What is Jenkins/TeamCity/GoCI used for?
 * What is the difference between Containers and VMs?
 * How do you create a new postgres user?
 * What is a virtual IP address? What is a cluster?
@@ -217,9 +231,10 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * How do you find shared library dependencies?
 * What is Automake and Autoconf?
 * ./configure shows an error that libfoobar is missing on your system, how could you fix this, what could be wrong?
-* What are the Advantages/disadvantages of script vs compiled program?
+* What are the advantages/disadvantages of script vs compiled program?
 * What's the relationship between continuous delivery and DevOps?
-* What are the important aspects of a system of continous integration and deployment?
+* What are the important aspects of a system of continuous integration and deployment?
+* How would you enable network file sharing within AWS that would allow EC2 instances in multiple availability zones to share data?
 
 ####[[⬆]](#toc) <a name='fun'>Fun Questions:</a>
 
@@ -231,6 +246,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * Tell me about a creative way that you've used SSH?
 * You have deleted by error a running script, what could you do to restore it?
 * What will happen on 19 January 2038?
+* How to reboot server when reboot command is not responding?
 
 
 ####[[⬆]](#toc) <a name='demo'>Demo Time:</a>
@@ -244,9 +260,9 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * How to send an email without a mail client, just on the command line?
 * Write a ```get_prim``` method in python/perl/bash/pseudo.
 * Find all files which have been accessed within the last 30 days.
-* Explain the following command ```(date ; ps -ef | awk ‘{print $1}’ | sort | uniq | wc -l ) >> Activity.log```
+* Explain the following command ```(date ; ps -ef | awk '{print $1}' | sort | uniq | wc -l ) >> Activity.log```
 * Write a script to list all the differences between two directories.
-* In a log file with contents as ```<TIME> : [MESSAGE] : [ERROR_NO] - Human readable text``` display summary/count of specific error numbers that occured every hour or a specific hour.
+* In a log file with contents as ```<TIME> : [MESSAGE] : [ERROR_NO] - Human readable text``` display summary/count of specific error numbers that occurred every hour or a specific hour.
 
 
 ####[[⬆]](#toc) <a name='references'>Other Great References:</a>
@@ -255,7 +271,4 @@ Some questions are 'borrowed' from other great references like:
 
 * https://github.com/darcyclarke/Front-end-Developer-Interview-Questions
 * https://github.com/kylejohnson/linux-sysadmin-interview-questions/blob/master/test.md
-* https://github.com/gurmeet1109/docgurmeet/tree/master/InterviewQuestionsSamples
 * http://slideshare.net/kavyasri790693/linux-admin-interview-questions
-* https://github.com/gurmeet1109/docgurmeet/tree/master/InterviewQuestionsSamples
-* https://github.com/kylejohnson/linux-sysadmin-interview-questions/blob/master/test.md
